@@ -17,6 +17,8 @@ footer {
   padding: 100px;
 }
 
+/* HEADER */
+
 header {
   position: fixed;
   padding: .5rem 2rem;
@@ -30,6 +32,7 @@ header {
   -webkit-box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.05);
   -moz-box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.05);
   background-color: rgba(255, 255, 255, 0.3);
+  z-index: 10;
 }
 
 nav {
@@ -47,6 +50,28 @@ img {
   height: 100%;
 }
 
+/* GENERICO */
+h2 {
+  font-size: 3rem;
+  margin: 0;
+}
+
+p {
+  font-size: 1.2rem;
+  line-height: 150%;
+}
+
+.subtitulo {
+  font-size: 1.7rem;
+}
+
+/* SECTION */
+section {
+  min-height: 100vh;
+}
+
+/* INICIO */
+
 #inicio {
   display: flex;
   justify-content: space-between;
@@ -61,45 +86,59 @@ img {
   gap: 1rem;
 }
 
-.font-color {
-  color: #DE1E88;
-  font-size: 4rem;
-}
-
-.inicio-titulo h2 {
-  font-size: 3rem;
-  margin: 0;
-}
-
-.inicio-titulo p {
-  font-size: 1.2rem;
-  line-height: 150%;
-}
-
-.subtitulo {
-  font-size: 1.7rem;
-  width: 100%;
-}
-
 #home-img {
   height: 35rem;
 }
 
-strong {
-  position: relative;
-  font-weight: 400;
+/* SERVICIOS */
+#servicios {
+  padding: 5.5rem 0;
 }
 
-strong::before {
-  background-color: #FFA8F6;
-  content: "";
-  position: absolute;
-  width: calc(100% + 4px);
-  height: 40%;
-  left: -2px;
-  bottom: 0;
-  z-index: -1;
+.servicios-bg {
+  background-color: #FAECFF;
+  height: 32rem;
+  width: 90%;
+  border-radius: 0 20rem 0 0;
+  position: relative;
+  z-index: 0;
+  display: flex;
+  gap: .5rem;
+  flex-direction: column;
+  padding: 2rem;
+  align-items: center;
 }
+
+.carrousel {
+  margin-left: 7rem;
+  width: 90%;
+  margin-top: 2rem;
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  gap: 0 3rem;
+  height: max-content;
+  padding: 2rem;
+  scroll-snap-type: x mandatory;
+}
+
+.tarjeta-proyecto {
+  flex: 0 0 auto;
+  background-color: white;
+  padding: 2rem;
+  border-radius: 1rem;
+  width: 20rem;
+
+  box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.1);
+}
+
+.tarjeta-proyecto img {
+  height: 3rem;
+}
+
+/* BOTON */
 
 .boton {
   width: fit-content;
@@ -119,5 +158,72 @@ strong::before {
 }
 
 .boton a {
-  color:  white;
+  color: white;
+}
+
+/* DECORACION */
+
+.font-color {
+  color: #DE1E88;
+  font-size: 4rem;
+}
+
+strong {
+  position: relative;
+  font-weight: 400;
+}
+
+strong::before {
+  background-color: #FFA8F6;
+  content: "";
+  position: absolute;
+  width: calc(100% + 4px);
+  height: 40%;
+  left: -2px;
+  bottom: 0;
+  z-index: -1;
+}
+
+
+.carousel-container {
+  width: 80vw;
+
+}
+
+.card {
+  display: inline-block;
+  width: 20rem;
+  margin-right: 1rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.card:last-child {
+  margin-right: 0;
+}
+
+
+/* SCROLL BAR */
+
+/* ===== Scrollbar CSS ===== */
+/* Firefox */
+.carrousel {
+  scrollbar-width: auto;
+  scrollbar-color: rgba(148, 116, 156, 0.5) #ffffff;
+}
+
+/* Chrome, Edge, and Safari */
+.carrousel::-webkit-scrollbar {
+  width: 20px;
+}
+
+.carrousel::-webkit-scrollbar-track {
+  background: #ffffff13;
+}
+
+.carrousel::-webkit-scrollbar-thumb {
+  background-color: rgba(148, 116, 156, 0.5);
+  border-radius: 10px;
+  border: 3px solid #ffffff;
 }
