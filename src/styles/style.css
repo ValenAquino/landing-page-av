@@ -8,6 +8,7 @@ body {
   font-family: 'Montserrat', sans-serif;
   background: linear-gradient(to left, #ffffff, #f5f0f6);
   color: #331B3B;
+  overflow-x: hidden;
 }
 
 footer {
@@ -106,11 +107,14 @@ section {
 
 #inicio {
   display: flex;
-  justify-content: space-between;
+  flex-wrap: wrap;
+  justify-content: center;
   padding: 0;
+  width: 100%;
 }
 
 .inicio-titulo {
+  flex: 1 1 30%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -150,27 +154,30 @@ section {
 #sobre-mi {
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
+  width: 100%;
   gap: 0 3rem;
-  padding: 5rem;
+  padding: 2rem;
 }
 
 #sobre-mi img {
-  flex-direction: 0 0 auto;
+  flex: 0 0 auto;
   height: 33rem;
 }
 
 .sobre-mi-info {
+  flex: 1 1 30%;
+  padding: 1em;
   display: flex;
   flex-direction: column;
+  flex-wrap: wrap;
   gap: .5rem;
 }
 
 .sobre-mi-info p {
-  display: flex;
-  flex-direction: column;
-  gap: 1em;
   font-size: 1.1rem;
   margin-bottom: 2rem;
+  padding: 1.5rem;
 }
 
 /* Proyectos */
@@ -241,6 +248,7 @@ section {
   width: 80%;
   padding: 2rem 1rem;
   display: flex;
+  flex-wrap: wrap;
   border-radius: 1rem;
   justify-content: center;
   gap: 1rem;
