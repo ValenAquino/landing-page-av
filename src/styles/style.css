@@ -260,6 +260,7 @@ section {
   padding: 1rem;
   display: flex;
   flex-direction: column;
+  gap: .5em;
 }
 
 .form-container label {
