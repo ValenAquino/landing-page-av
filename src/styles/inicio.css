@@ -51,3 +51,9 @@
     margin-left: 0em;
   }
 }
+
+@media (max-width: 500px) {
+  #sobre-mi .container-titulo {
+    margin-top: 0em;
+  }
+}

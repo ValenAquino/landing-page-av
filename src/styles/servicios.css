@@ -1,6 +1,7 @@
 /* SERVICIOS */
 #servicios {
   padding-top: 5em;
+  min-height: 100vh;
 }
 
 .servicios-bg {
@@ -26,6 +27,8 @@
 @media (max-width: 600px) {
   #servicios {
     font-size: 12px;
+    min-height: fit-content;
+    margin-bottom: 5em;
   }
 
   .servicios-bg {
