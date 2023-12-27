@@ -1,0 +1,34 @@
+/* SERVICIOS */
+#servicios {
+  padding-top: 5em;
+}
+
+.servicios-bg {
+  background: linear-gradient(to left, #f5daff, #FAECFF);
+  padding: 1em;
+  border-radius: 0 20rem 0 0;
+}
+
+.tarjeta-servicio img {
+  height: 3rem;
+}
+
+@media (max-width: 750px) {
+  #servicios {
+    font-size: 14px;
+  }
+
+  .tarjeta-servicio {
+    min-width: 100%;
+  }
+}
+
+@media (max-width: 600px) {
+  #servicios {
+    font-size: 12px;
+  }
+
+  .servicios-bg {
+    border-radius: 0 10rem 0 0;
+  }
+}
