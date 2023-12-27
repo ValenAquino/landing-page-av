@@ -28,6 +28,9 @@
 
   <!-- Email JS -->
   <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+
+  <!-- Box Icons-->
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
 
 <body>
@@ -37,11 +40,19 @@
       <img src="/logo.svg" alt="Logo de Vallejos Abril">
     </a>
 
+    <input type="checkbox" name="check" id="check">
+    <label for="check" class="icons">
+      <i id="menu-icon" class='bx bx-menu'></i>
+      <i id="close-icon" class='bx bx-x'></i>
+    </label>
+
     <nav>
-      <a href="#sobre-mi">Sobre Mí</a>
-      <a href="#servicios">Servicios</a>
-      <a href="#proyectos">Proyectos</a>
-      <a href="#contacto">Contacto</a>
+      <ul class="header-nav">
+        <li> <a href="#sobre-mi">Sobre Mí</a> </li>
+        <li> <a href="#servicios">Servicios</a> </li>
+        <li> <a href="#proyectos">Proyectos</a> </li>
+        <li> <a href="#contacto">Contacto</a> </li>
+      </ul>
     </nav>
 
     <div class="social-icons">
@@ -54,13 +65,13 @@
     </div>
   </header>
 
-  <section id="inicio">
-    <div class="inicio-titulo">
+  <section id="inicio" class="container">
+    <div class="container-titulo">
       <h2>
         <span class="font-color">Hola!</span> <br> Soy Abril Vallejos
       </h2>
       <span class="subtitulo">
-        Tecnica Superior en <strong>Marketing Digital</strong>
+        Tecnica Superior en <span class="highlight">Marketing Digital</span>
       </span>
       <p>
         ¡Bienvenido a mi plataforma digital! Descubre cómo puedes llevar tu presencia en
@@ -69,35 +80,37 @@
       </p>
       <a class="boton" href="#contacto">CONTACTAR</a>
     </div>
-    <img src="/home.svg" alt="Abby" id="home-img">
+    <div class="container-img">
+      <img src="/home.svg" alt="Abby" id="home-img">
+    </div>
   </section>
 
   <section id="servicios">
     <div class="bg-radio servicios-bg">
       <h2>Servicios</h2>
-      <span class="subtitulo">Para tu <strong>Negocio</strong></span>
-
+      <span class="subtitulo">Para tu <span class="highlight">Negocio</span></span>
+  
       <div class="carrousel">
         <div class="tarjeta tarjeta-servicio">
           <img src="/servicios/campania.svg" alt="servicio de campania de marketing">
           <h3>Campañas Publicitarias</h3>
           <p>En todas las redes sociales, utilizando herramientas como Google Ads, Meta</p>
         </div>
-
+  
         <div class="tarjeta tarjeta-servicio">
           <img src="/servicios/seo.svg" alt="servicio de Posicionamiento SEO">
           <h3>Posicionamiento SEO</h3>
           <p>Técnicas y estrategias centradas en optimizar el posicionamiento orgánico
             en buscadores de internet.</p>
         </div>
-
+  
         <div class="tarjeta tarjeta-servicio">
           <img src="/servicios/marketing.svg" alt="servicio de Marketing Digital">
           <h3>Marketing Digital</h3>
           <p>Informes detallados en el que especificamos los objetivos, estrategias y
             tácticas que a seguir</p>
         </div>
-
+  
         <div class="tarjeta tarjeta-servicio">
           <img src="/servicios/world.svg" alt="servicio de Estrategias de Contenido">
           <h3>Estrategia de Contenido</h3>
@@ -105,37 +118,42 @@
             audiencia específica </p>
         </div>
       </div>
-
+  
     </div>
   </section>
 
-  <section id="sobre-mi">
-    <img src="/sobremi.svg" alt="Instagram">
-    <div class="sobre-mi-info">
-      <h2><strong>Sobre Mí</strong></h2>
-      <p>        
-          Soy Abril Vallejos, una amante de los viajes, del invierno y del teatro, especialmente la comedia musical.
-        <br><br>        
-          Cada nueva experiencia y escenario me inspiran a pensar de manera <b>creativa</b>, una cualidad que he llevado conmigo en mi viaje hacia el mundo del marketing digital.
-        <br><br>        
-          Mi pasión por la comunicación y las redes sociales me han llevado a descubrir mi verdadera vocación, el <b>Marketing Digital</b>.
-        <br><br>        
-          Transformo esa pasión en estrategias digitales impactantes, creando conexiones auténticas entre las marcas y su audiencia.
-        <br><br>        
-          Con un enfoque fresco e innovador, estoy aquí para llevar tu presencia en línea a nuevas alturas.
+  <section id="sobre-mi" class="container">
+    <div class="container-img">
+      <img src="/sobremi.svg" alt="Instagram">
+    </div>
+    <div class="container-titulo">
+      <h2><span class="highlight">Sobre Mí</span></h2>
+      <p>
+        Soy Abril Vallejos, una amante de los viajes, del invierno y del teatro, especialmente la comedia musical.
+        <br><br>
+        Cada nueva experiencia y escenario me inspiran a pensar de manera <b>creativa</b>, una cualidad que he llevado
+        conmigo en mi viaje hacia el mundo del marketing digital.
+        <br><br>
+        Mi pasión por la comunicación y las redes sociales me han llevado a descubrir mi verdadera vocación, el
+        <b>Marketing Digital</b>.
+        <br><br>
+        Transformo esa pasión en estrategias digitales impactantes, creando conexiones auténticas entre las marcas y su
+        audiencia.
+        <br><br>
+        Con un enfoque fresco e innovador, estoy aquí para llevar tu presencia en línea a nuevas alturas.
         <br><br>
       </p>
-
+  
       <a class="boton" href="#contacto">CONTACTAR</a>
     </div>
   </section>
 
   <section id="proyectos">
     <div class="bg-radio proyectos-bg">
-      <h2><strong>Proyectos</strong></h2>
-
+      <h2><span class="highlight">Proyectos</span></h2>
+  
       <div class="carrousel">
-
+  
         <div class="tarjeta tarjeta-proyecto">
           <img src="/proyectos/talent.svg" alt="proyecto de talent up">
           <div class="proyecto-titulo">
@@ -145,7 +163,7 @@
             </a>
           </div>
         </div>
-
+  
         <div class="tarjeta tarjeta-proyecto">
           <img src="/proyectos/leon.svg" alt="proyecto de diente de leon">
           <div class="proyecto-titulo">
@@ -155,7 +173,7 @@
             </a>
           </div>
         </div>
-
+  
         <div class="tarjeta tarjeta-proyecto">
           <img src="/proyectos/meular.svg" alt="proyecto de meular bazar">
           <div class="proyecto-titulo">
@@ -165,7 +183,7 @@
             </a>
           </div>
         </div>
-
+  
         <div class="tarjeta tarjeta-proyecto">
           <img src="/proyectos/sm.svg" alt="proyecto de sm car service">
           <div class="proyecto-titulo">
@@ -175,7 +193,7 @@
             </a>
           </div>
         </div>
-
+  
         <div class="tarjeta tarjeta-proyecto">
           <img src="/proyectos/diconex.svg" alt="proyecto de diconex">
           <div class="proyecto-titulo">
@@ -185,7 +203,7 @@
             </a>
           </div>
         </div>
-
+  
         <div class="tarjeta tarjeta-proyecto">
           <img src="/proyectos/avva.svg" alt="proyecto de avva">
           <div class="proyecto-titulo">
@@ -195,14 +213,14 @@
             </a>
           </div>
         </div>
-
+        
       </div> <!-- carrousel  -->
-
+  
     </div> <!-- bg  -->
   </section>
 
   <section id="herramientas">
-    <h2><strong>Herramientas</strong> que utilizo</h2>
+    <h2><span class="highlight">Herramientas</span> que utilizo</h2>
     <div class="herramientas-container">
       <img class="herramientas-container-img" src="/herramientas/premiere.svg" alt="icono de adobe premiere">
       <img class="herramientas-container-img" src="/herramientas/canva.svg" alt="icono de canva">
@@ -213,15 +231,17 @@
     </div>
   </section>
 
-  <div class="ocean">
-    <div class="wave"></div>
-    <div class="wave"></div>
-    <div class="wave"></div>
+  <div id="contacto" class="waves-container">
+    <div class="ocean">
+      <div class="wave"></div>
+      <div class="wave"></div>
+      <div class="wave"></div>
+    </div>
   </div>
 
-  <footer id="contacto">
+  <footer class="contacto">
     <h2>Contacto</h2>
-
+  
     <div class="social-icons">
       <a href="https://www.instagram.com/vallejosabii/" target="_blank">
         <img src="/icons/instagram.svg" alt="Instagram">
@@ -230,35 +250,32 @@
         <img src="/icons/linkedin.svg" alt="Linkedin">
       </a>
     </div>
-
+  
     <div class="form-container">
+     <div class="form-container-img">
       <img class="contact" src="logo.svg" alt="Logo de Abril Vallejos">
-
+     </div>
+  
       <form id="contact-form" action="#" method="post">
         <label for="name">Nombre:</label>
         <input type="text" id="name" name="name" required>
-
+  
         <label for="subject">Asunto:</label>
         <input type="text" id="subject" name="subject" placeholder="Me gustaria organizar una llamada" required>
-
+  
         <label for="email">Correo Electrónico:</label>
         <input type="email" id="email" name="email" required>
-
+  
         <label for="message">Mensaje:</label>
-        <textarea 
-          id="message" 
-          name="message" 
-          rows="4" 
-          required
-          placeholder="Hola Abby, vi tu portfolio y me interesan tus servicios. Hagamos algo grandioso juntos!"
-        ></textarea>
-
+        <textarea id="message" name="message" rows="4" required
+          placeholder="Hola Abby, vi tu portfolio y me interesan tus servicios. Hagamos algo grandioso juntos!"></textarea>
+  
         <button type="submit">Enviar</button>
-      </form>
+      </for>
     </div>
-
+  
   </footer>
-
+    
   <script type="module" src="/main.js"></script>
 </body>
 
