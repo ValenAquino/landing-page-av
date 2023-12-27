@@ -37,3 +37,10 @@ form.addEventListener("submit", (e) => {
     alert("Error al enviar correo electrónico:");
   });
 });
+
+document.addEventListener('DOMContentLoaded', function () {
+  var yearSpan = document.getElementById('currentYear');
+  if (yearSpan) {
+    yearSpan.textContent = new Date().getFullYear();
+  }
+});

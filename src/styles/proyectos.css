@@ -27,3 +27,9 @@
 .tarjeta-proyecto img {
   height: 9rem;
 }
+
+@media (max-width: 750px) {
+  .tarjeta-proyecto {
+    min-width: 24em;
+  }
+}

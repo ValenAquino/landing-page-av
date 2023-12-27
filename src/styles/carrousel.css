@@ -50,10 +50,4 @@
   .carrousel {
     margin-left: 2em;
   }
-}
-
-@media (max-width: 480px) {
-  .carrousel {
-    width: 100%;
-  }
-}
+} 

@@ -1,7 +1,6 @@
 body {
   background: linear-gradient(to left, #ffffff, #f5f0f6);
   color: #331B3B;
-  overflow-x: hidden;
 }
 
 section {
@@ -91,10 +90,17 @@ h2 {
 
 footer {
   position: relative;
-  padding: 2rem;
   background: linear-gradient(to bottom, #d8358f, #eb5dab);
   color: white;
   z-index: 11;
+}
+
+footer p {
+  text-align: center;
+}
+
+.copyright {
+  padding: 2em;
 }
 
 /* Media Queries */
@@ -108,4 +114,5 @@ footer {
   .bg-radio {
     width: 100%;
   }
+  
 }
