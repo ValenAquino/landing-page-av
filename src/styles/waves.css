@@ -1,4 +1,7 @@
-/* Waves */
+.waves-container {
+  padding-top: 7em;
+}
+
 .ocean {
   height: 80px;
   width: 100%;
