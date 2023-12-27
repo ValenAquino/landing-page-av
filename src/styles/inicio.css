@@ -1,6 +1,6 @@
-/* INICIO */
+/* INICIO  Y SOBRE MI*/
 
-#inicio {
+.container {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -9,7 +9,7 @@
   width: 100%;
 }
 
-.inicio-titulo {
+.container-titulo {
   flex: 1;
   display: flex;
   flex-wrap: wrap;
@@ -21,9 +21,11 @@
   min-width: 475px;
 }
 
-.inicio-img {
+.container-img {
   flex: 1;
   min-width: 400px;
+  display: flex;
+  justify-content: center;
 }
 
 .subtitulo {
@@ -32,14 +34,20 @@
 }
 
 @media (max-width: 750px) {
-  .inicio-titulo {
+  .container-titulo {
     margin: 1em;
     margin-top: 10em;
     min-width: 100%;
   } 
 
-  .inicio-img {
+  .container-img {
     min-width: 100%;
   }
 
+}
+
+@media (max-width: 972px) {
+  .container-titulo {
+    margin-left: 3em;
+  }
 }
