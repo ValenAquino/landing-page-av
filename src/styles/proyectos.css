@@ -1,0 +1,29 @@
+/* Proyectos */
+#proyectos {
+  display: flex;
+  justify-content: end;
+  padding-top: 6em;
+}
+
+.proyectos-bg {
+  background: linear-gradient(to right, #f5daff, #FAECFF);
+  border-radius: 20rem 0 0 0;
+  padding: 2em;
+  height: fit-content;
+}
+
+.tarjeta-proyecto {
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+}
+
+.proyecto-titulo {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.tarjeta-proyecto img {
+  height: 9rem;
+}
