@@ -1,0 +1,33 @@
+/* Herramientas */
+#herramientas {
+  text-align: center;
+  margin: 1rem 1rem 5rem 1rem;
+  display: flex;
+  gap: 5rem;
+  flex-direction: column;
+  align-items: center;
+}
+
+.herramientas-container {
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+  justify-content: center;
+  gap: 2em;
+}
+
+.herramientas-container-img {
+  height: 8rem;
+}
+
+.herramientas-container-img:hover::after {
+  content: attr(data-alt);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.8);
+  padding: 0.5em;
+  text-align: center;
+  font-size: 0.8em;
+}
