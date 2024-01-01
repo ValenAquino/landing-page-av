@@ -1,4 +1,4 @@
-const form = document.getElementById("contact-form")
+import emailjs from '@emailjs/browser';
 
 emailjs.init("AVry4BkR-IsSnZykY");
 

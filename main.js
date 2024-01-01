@@ -15,6 +15,9 @@ import './src/styles/waves.css';
 import 'boxicons';
 
 import { sendEmail } from './src/scripts/email';
+import { getYear } from './src/scripts/utilities';
+
+const form = document.getElementById("contact-form");
 
 form.addEventListener("submit", sendEmail);
 document.addEventListener('DOMContentLoaded', getYear);
